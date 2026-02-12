@@ -10,4 +10,4 @@ stop:
 	docker stop evretifrasi-assets
 
 push-changes:
-	$(docker) sh -c "apk add git && git config --global user.email ${email} && git add -A && git commit -m '${message}' && git push"
+	$(docker) sh -c "apk add git && git config --global user.email ${email} && git add -A && git commit -m 'Updated assets' && git push"
